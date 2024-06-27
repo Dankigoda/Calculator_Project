@@ -7,9 +7,8 @@ body{
     align-items: center;
 }
 .calculator_container{
-    background-color: blue;
     width: 500px;
-    height: 700px;
+    height: 800px;
 }
 .input_container{
     padding: 0;
@@ -29,26 +28,57 @@ body{
 }
 .button_container{
     width: 100%;
-    height: 600px;
+    height: 700px;
     padding: 0;
-    background-color: black;
-    display:grid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .top_functions_container{
-    width: 75%;
+    width: 100%;
     height: 100px;
-    background-color: aqua;
     margin-top:33px;
     padding: 0px;
+    background-color: aqua;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 7px;
 }
 .right_functions_container{
     background-color: tomato;
     width: 125px;
-    height: 566px;
+    height: 600px;
+    margin-bottom: 30px;
 }
 .numbers_container{
-    background-color: blueviolet;
+    background-color:blue;
     width: 75%;
-    height: 467px;
-    margin:0px;
+    height: 600px;
+    margin:0px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+.top_functions_buttuns{
+    border:none;
+    padding:40px;
+    font-size: 40px;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.numbers_buttons{
+    padding:50px;
+    font-size: 30px;
+    border:none;
+    margin: 2px;;
+}
+#number_zero{
+    width: 241px;
+    align-self: start;
+    margin-right: 12px;
+}
+#dot{
+    align-self: start;
+    margin-top:1px;
 }
