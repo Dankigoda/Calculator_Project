@@ -132,3 +132,120 @@ body{
 #equell{
     height: 155px;
 }
+/* mobile screens */
+@media(max-width:430px){
+    .calculator_container{
+        width: 400px;
+        height:760px;
+        background-color: black;
+        padding: 8px;
+        padding-right: 15px;
+    }
+    .input_container{
+        padding: 0;
+        width: 100%;
+        height: 70px;
+    }
+    #number_input{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        padding-top:30px;
+        font-size: 60px;
+        outline:none;
+        background-color: #c3c9c7;
+        border:solid;
+        font-family:'Courier New', Courier, monospace;
+        font-size: 50px;
+        
+    }
+    .button_container{
+        width: 400px;
+        height: 700px;
+        padding: 0;
+        display: grid;
+        grid-template-rows: repeat(4);
+    }
+    .top_functions_container{
+        width:88%;
+        height: 50px;
+        margin: 20px; 
+        margin-top: 40px;
+        margin-bottom:56px;
+        display:flex;
+        margin-left: 5px;
+    }
+    
+    .right_functions_container{
+        width: 70px;
+        height: 300px;
+        display: grid;
+        grid-template-columns: repeat(1);
+        position: fixed;
+        right: 115px;
+        top: 302px;
+    }
+    .numbers_container{
+        height: 500px;
+        width: 56%;
+        margin-bottom:480px; 
+        display: flex;
+    }
+    .top_functions_buttuns{
+        border:none;
+        padding:0px;
+        font-size:30px;
+        background-color: dodgerblue;
+        height: 100px;
+        margin-right: 1px;
+    }
+    .top_functions_buttuns:active{
+        opacity:0.8;
+    }
+    #delene{
+        width: 95px;
+        margin-right:100px;
+    }
+    #AC{
+        margin: 0;
+        width: 110px;
+    }
+    #PM{
+        width: 110px;
+    }
+
+    #persent{ 
+      width: 110px; 
+    
+    }
+    .numbers_buttons{
+       width: 100px;
+       padding: 10px;
+       height: 130px;
+       background-color:#217C7E;
+       margin-right: 0;
+    }
+    .numbers_buttons:active{
+        opacity: 0.8;
+    }
+    #number_zero{
+        width: 205px;
+        margin-left:2px;
+    }
+    
+    #dot{
+        width: 100px;
+    }
+    .right_functions_buttons{
+        width: 85px;
+        height: 130px;
+        background-color:#FF8F1F;;
+        color:white;
+    }
+    .right_functions_buttons:active{
+        opacity: 0.8;
+    }
+    #equell{
+        height: 130px;
+    }
+}
