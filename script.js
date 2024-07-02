@@ -1,4 +1,6 @@
 inputElement = document.getElementById('number_input');
+numberArray = [inputElement.value];
+
 function appent(input){
     inputElement.value += input;
 }
@@ -16,7 +18,7 @@ function result(){
 }
 
 function deleteLast(){
-
+     inputElement.value = inputElement.value.toString().slice(0,-1);
 }
 
-console.log(inputElement.value);
+console.log(numberArray);
